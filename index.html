@@ -1,0 +1,687 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/stylenew.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+<div class="theme-font-palatino theme-color-sky-blue" style="width: 100%; height: 100%;">
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="none" data-background-transition="none">
+                <div class="sl-block" data-block-type="text" style="width: 956px; left: 0px; top: 70px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 10; line-height: 0.975; border-width: 1px;" dir="ui" data-has-line-height="">
+                        <h1><span style="font-size:1.0em">A search for variable stars and compact binaries in globular clusters with HST</span></h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 86.3145px; height: 101.369px; left: 436.843px; top: 509.316px;">
+                    <div class="sl-block-content" data-inline-svg="false" style="z-index: 11;"><img style="" data-natural-width="86" data-natural-height="101" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/6535737/ttu.svg"></div>
+                </div>
+
+
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 404px;" data-name="text-9a31cd">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <p><strong>Manuel Pichardo Marcano</strong></p>
+
+                        <p>Liliana Rivera Sandoval, Thomas J. Maccarone</p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 644.778px;" data-name="text-b08dbc">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p><span style="font-size:0.9em">Astronomy group meeting April, 2020</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="video" style="min-width: 30px; min-height: 30px; width: 546.721px; height: 410.279px; left: 13.279px; top: 160.604px;" data-name="video-1d13d7">
+                    <div class="sl-block-content" style="z-index: 10;" data-media-id="7251632" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/410675/HD15efjc/cv_thumb_00001.jpg"><video playsinline="" poster="https://s3.amazonaws.com/media-p.slid.es/videos/410675/HD15efjc/cv_thumb_00001.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/videos/410675/HD15efjc/cv.mp4"></video></div>
+                </div>
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 19px;" data-name="text-57aa93">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <h2>Cataclysmic Variable</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 374.742px; left: 573.258px; top: 160.604px;" data-name="text-fe8695">
+                    <div class="sl-block-content" style="z-index: 13; line-height: 1.56;" data-has-line-height="">
+                        <ul>
+                            <li>
+                                <p>White dwarf primary</p>
+                            </li>
+                            <li>
+                                <p>"Main-sequence" donor</p>
+                            </li>
+                            <li>
+                                <p>75 mins &lt; Porb &lt; 6hrs</p>
+                            </li>
+                            <li>
+                                <p>Roche-lobe overflow</p>
+                            </li>
+                            <li>
+                                <p>Accretion disk (non-magnetic)</p>
+                            </li>
+                            <li>
+                                <p>Disk instability:</p>
+
+                                <ul>
+                                    <li>
+                                        <p>Dwarf novae</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div style="padding-top:50px" class="sl-block-content">
+                    <h2>Binaries in Globular Clusters </h2>
+
+                </div>
+
+                <ul>
+                    <li class="fragment" data-fragment-index="0">
+                        <b>Globular Clusters</b>
+                        <ul>
+                            <li>The binary population drives the <em>
+                                    <font color="red">dynamical evolution</font>
+                                </em> of GCs</li>
+                        </ul>
+                    </li>
+                    <li style="padding-top:10px" class="fragment" data-fragment-index="1">
+                        <b>Cataclysmic Variables:</b>
+                        <ul>
+                            <li>Large <em>
+                                    <font color="red">(predicted)</font>
+                                </em> sample at known distance </li>
+
+                            <li>Potentially very <em>
+                                    <font color="red">different from field CVs</font>
+                                </em>
+                            </li>
+                            <li>A lot of open questions</li>
+                        </ul>
+                    </li>
+
+                    <li style="padding-top:10px" class="fragment" data-fragment-index="2">
+                        <b>Gravitational Waves:</b>.
+                        <ul>
+
+                            <li>White dwarf degenerate sources for <em>
+                                    <font color="red">LISA</font>
+                                </em>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div style="padding-top:50px">
+                    <h2> Field CVs and GC CVs</h2>
+                </div>
+                <div class="" style="float: left; width: 45%">
+
+                    <h3>GC CVs</h3>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Dynamically formed channel</li>
+                        <li class="fragment" data-fragment-index="1">Dearth of outbursts </li>
+                        <li class="fragment" data-fragment-index="2">Mainly magnetic? </li>
+                        <li class="fragment" data-fragment-index="3">Period distribution?</li>
+                        <li class="fragment" data-fragment-index="4">Missing Population</li>
+                    </ul>
+                </div>
+                <div class="" style="float: right; width: 45%">
+                    <h3>Field CVs</h3>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Main Sequence binary evolution</li>
+                        <li class="fragment" data-fragment-index="1"> 40% show outburst </li>
+                        <li class="fragment" data-fragment-index="2">25% magnetic </li>
+                        <li class="fragment" data-fragment-index="3"> 75 min &lt; Porb &lt; 6 hrs </li>
+                        <li class="fragment" data-fragment-index="4">Thousands of CVs</li>
+                    </ul>
+                </div>
+                <div style="padding-top:300px">
+                    <h2 class="fragment" data-fragment-index="5">
+                        <em>
+                            <font color="red">Lack data and understanding CVs in GCs</font>
+                        </em>
+                    </h2>
+                </div>
+            </section>
+            <section data-auto-animate="">
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 752px; left: 104px; top: 12.4453px;" data-name="text-539e59">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Where are all the CVs?</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180.25px; top: 89px;" data-name="text-bed792">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h3>The predictions:</h3>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 619px; height: 432.727px; left: 1px; top: 197.273px; min-width: 1px; min-height: 1px;" data-name="image-cd606d">
+                    <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="216" data-natural-height="151" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256137/bel.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 176px; left: 435px; top: 567.5px;" data-name="text-579f30">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p><span style="font-size:0.7em">Belloni et. al (2019)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 377px; left: 582.5px; top: 210px;" data-name="text-78015a">
+                    <div class="sl-block-content" style="z-index: 14; font-size: 120%;">
+                        <ul>
+                            <li>∼100-1000 CVs per Cluster</li>
+                            <li style="margin: 10px 0;"># scales with cluster mass</li>
+                            <li>α dependence</li>
+                            <ul>
+                                <li>Common envelope phase efficiency </li>
+                            </ul>
+                        </ul>
+
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 958.5px; left: 1px; top: 608.515px;" data-name="text-2ff760">
+                    <div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0">
+                        <h2><span style="color:#FF0000">We are far from the hundreds predicted</span></h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 75px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Finding CVs in GCs</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 314.03px; height: 380.815px; left: 645.97px; top: 182.185px; min-width: 1px; min-height: 1px;" data-name="image-3541c4">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="400" data-natural-height="401" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256195/xrayngc6397.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 383.009px; height: 287.257px; left: -31.5045px; top: 230.061px; min-width: 1px; min-height: 1px;" data-name="image-0db261">
+                    <div class="sl-block-style" style="z-index: 12; transform: rotate(90deg);">
+                        <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1800" data-natural-height="1350" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256197/ngc6397esa.jpg"></div>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 314.732px; height: 400.815px; left: 317.634px; top: 173.282px; min-width: 1px; min-height: 1px;" data-name="image-8f495f">
+                    <div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="459" data-natural-height="551" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256211/kniggefuvngc6397.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 287.257px; left: 17.3715px; top: 574.097px;" data-name="text-91b7a4">
+                    <div class="sl-block-content" style="z-index: 14; line-height: 0.78;" data-has-line-height="">
+                        <p>HST Optical <span style="font-size:0.9em">(3' x 2')</span></p>
+
+                        <p><span style="font-size:0.5em">NASA, T. Brown and S. Casertano (STScI) </span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 312.366px; left: 320px; top: 574.097px;" data-name="text-48ad43">
+                    <div class="sl-block-content" style="z-index: 15; line-height: 0.78;" dir="ui" data-has-line-height="">
+                        <p>HST NUV (2.7' x 2.7')</p>
+
+                        <p><span style="font-size:0.5em">Dieball et. al (2016)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 314.03px; left: 645.97px; top: 574.097px;" data-name="text-f7eb25">
+                    <div class="sl-block-content" style="z-index: 16; line-height: 0.78;" data-has-line-height="">
+                        <p>Chandra (3.65 ' x 3.65')</p>
+
+                        <p><span style="font-size:0.5em">NASA/CXC/Northwestern Univ/J.Fregau</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 704.19px; left: 122.905px; top: 89px;" data-name="text-35ecd2">
+                    <div class="sl-block-content" style="z-index: 17;">
+                        <h3><span style="font-size:1.0em">1. X-rays and 2. (F)UV excess</span></h3>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 74px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Finding CVs in GCs</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 341.105px; left: 55.6795px; top: 673.541px;" data-name="text-87e993">
+                    <div class="sl-block-content" style="z-index: 11; line-height: 0.65;" data-has-line-height="">
+                        <p><span style="font-size:0.7em">L.E. Rivera-<span class="highlight selected">Sandoval</span> et al.&nbsp; (2018)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 440.498px; left: 443.502px; top: 151.771px;" data-name="text-0b2eac">
+                    <div class="sl-block-content" style="z-index: 12; line-height: 1.56;" data-has-line-height="">
+                        <ul>
+                            <li>
+                                <h3>Advantages:</h3>
+
+                                <ul>
+                                    <li>Avoid crowding</li>
+                                </ul>
+                            </li>
+                            <li>Disadvantages:
+                                <ul>
+                                    <li>Small FoV</li>
+                                    <li>L<sub>X</sub> ≥ 10<sup>29</sup>ergs s<sup>-1</sup>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 452.464px; height: 585.541px; left: 0px; top: 98px; min-width: 1px; min-height: 1px;" data-name="image-9b5c41">
+                    <div class="sl-block-content" style="z-index: 13;" data-inline-svg="false"><img style="" data-natural-width="612" data-natural-height="792" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256292/f15.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 560px; left: 400px; top: 490px;" data-name="text-3950e4">
+                    <div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+                        <h2><em><span style="color:#FF0000">Significant X-ray bias</span></em></h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 951px; left: 4.5px; top: 13.8621px;" data-name="text-59b923">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Unbiased X-ray search</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 955.5px; height: 391.012px; left: 0px; top: 210px; min-width: 1px; min-height: 1px;" data-name="image-494cc2">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="347" data-natural-height="142" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256495/tableGC.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 720px; left: 120px; top: 120.5px;" data-name="text-c34466">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <p>7 Globular Clusters in the core and outskirts</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 72px; top: 2px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Analysis Plan</h2>
+                    </div>
+                </div>
+
+
+
+                <div class="sl-block" data-block-type="image" style="width: 633.659px; height: 466.782px; left: 1px; top: 109.608px; min-width: 1px; min-height: 1px;" data-name="image-6e4509">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="805" data-natural-height="593" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256519/lili2.png"></div>
+                </div>
+
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 640px; left: 1px; top: 581.39px;" data-name="text-87e993">
+                    <div class="sl-block-content" style="z-index: 12; line-height: 0.78;" data-has-line-height="">
+                        <p><span style="font-size:1.0em">47 Tuc</span></p>
+
+                        <p><span style="font-size:1.0em">L.E. Rivera-<span class="highlight selected">Sandoval</span> et al.&nbsp; (2018)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 327px; left: 633px; top: 109px;" data-name="text-e73d21">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <ul>
+                            <li>
+                                <span style="font-size:1.4em">CMDs:</span>
+                                <ul>
+                                    <li><span style="font-size:1.4em">Identify blue objects</span></li>
+                                    <li><span style="font-size:1.4em">Hα excess</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span style="font-size:1.4em">Variability:</span>
+                                <ul>
+                                    <li><span style="font-size:1.4em">Flickering</span></li>
+                                    <li>
+                                        <span style="font-size:1.4em">Ellipsoidal Modulations</span><span class="st"> </span>
+                                    </li>
+                                    <li><span style="font-size:1.4em"><span class="st">Outbursts</span></span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 70px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Core vs Outskirts</h2>
+                    </div>
+                </div>
+
+
+
+                <div class="sl-block" data-block-type="image" style="width: 465.323px; height: 467.034px; left: 85.3385px; top: 109.608px; min-width: 1px; min-height: 1px;" data-name="image-6e4509">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="544" data-natural-height="546" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256549/gchstarchive.png"></div>
+                </div>
+
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 640px; left: 0px; top: 580.39px;" data-name="text-87e993">
+                    <div class="sl-block-content" style="z-index: 12; line-height: 0.78;" data-has-line-height="">
+                        <p>NGC 6397</p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 560px; top: 109px;" data-name="text-e73d21">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <ul>
+                            <li>
+                                <span style="font-size:1.4em">CMDs:</span>
+                                <ul>
+                                    <li><span style="font-size:1.4em">Identify blue objects</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span style="font-size:1.4em">Variability:</span>
+                                <ul>
+                                    <li><span style="font-size:1.4em">Flickering</span></li>
+                                    <li><span style="font-size:1.4em">Ellipsoidal Modulations<span class="st"> </span></span></li>
+                                    <li><span style="font-size:1.4em"><span class="st">Outbursts</span></span></li>
+                                </ul>
+                            </li>
+                            <li><em><span style="color:#FF0000"><span style="font-size:1.4em">Ground follow-up</span></span></em></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 70px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Core vs Outskirts</h2>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 815.415px; left: 80px; top: 548.5px;" data-name="text-87e993">
+                    <div class="sl-block-content" style="z-index: 11; line-height: 0.78;" data-has-line-height="">
+                        <p><span style="font-size:0.9em">Belloni &amp; </span><span style="font-size:1.0em">Rivera-<span class="highlight selected">Sandoval</span></span><span style="font-size:0.9em">&nbsp; (2020)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 820.415px; height: 361.5px; left: 80px; top: 178.25px; min-width: 1px; min-height: 1px;" data-name="image-419400">
+                    <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1078" data-natural-height="475" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256587/distribution.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 98px;" data-name="text-824c01">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p><span style="font-size:1.0em"><span class="highlight selected">Radial d</span>istribution of CV population</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 75px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Known Population of CVs</h2>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 306.625px; left: 0px; top: 210px;" data-name="text-0f19a6">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <ul>
+                            <li>
+                                <span style="font-size:1.2em">16 known periods</span>
+                                <ul>
+                                    <li><span style="font-size:1.2em">9 in 47 Tuc</span></li>
+                                    <li><span style="font-size:1.2em">7 clusters total</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 539.962px; height: 539.962px; left: 400px; top: 158.038px; min-width: 1px; min-height: 1px;" data-name="image-8341a6">
+                    <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="574" data-natural-height="574" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256893/period.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 134.161px; left: 755.839px; top: 644.4px;" data-name="text-e5beef">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p><span style="font-size:0.7em">Knigge (2006)</span></p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 480px; left: 0px; top: 136px;" data-name="text-499829">
+                    <div class="sl-block-content" style="z-index: 14;">
+                        <h2>GCs CVs</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 480px; left: 480px; top: 136px;" data-name="text-911f53">
+                    <div class="sl-block-content" style="z-index: 15;">
+                        <h2>Field CVS</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 0px; top: 428.019px;" data-name="text-3950e4">
+                    <div class="sl-block-content" style="z-index: 16;">
+                        <h2><em><span style="color:#FF0000"><span style="font-size:0.9em">Need more periods</span></span></em></h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 70px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Period Search</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 960px; height: 392.853px; left: 0px; top: 223.574px; min-width: 1px; min-height: 1px;" data-name="image-494cc2">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="347" data-natural-height="142" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256495/tableGC.svg"></div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 81px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Other Binaries</h2>
+                    </div>
+                </div>
+
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 422.131px; left: 521.997px; top: 146.349px;" data-name="text-920eb9">
+                    <div class="sl-block-content" style="z-index: 14; line-height: 1.95; font-size: 150%;" data-has-line-height="">
+                        <ul>
+                            <li>Low-mass X-ray Binary</li>
+                            <li>Millisecond Pulsars</li>
+                            <li>Active Binaries</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 498px; height: 499.245px; left: 12.6977px; top: 146.349px; min-width: 1px; min-height: 1px;" data-name="image-daaa3d">
+                    <div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="400" data-natural-height="401" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7256195/xrayngc6397.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 80px; top: 74px;" data-name="text-83978d">
+                    <div class="sl-block-content" style="z-index: 17;">
+                        <h3>Chandra and Radio follow-up</h3>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 314.03px; left: 12.6977px; top: 649.663px;" data-name="text-f7eb25">
+                    <div class="sl-block-content" style="z-index: 18; line-height: 0.78;" data-has-line-height="">
+                        <p><span style="font-size:0.5em">NASA/CXC/Northwestern Univ/J.Fregau</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 408.131px; left: 551.869px; top: 140px;" data-name="text-920eb9">
+                    <div class="sl-block-content" style="z-index: 10; line-height: 1.95; font-size: 150%;" data-has-line-height="">
+                        <ul>
+                            <li>Chandra X-ray</li>
+                            <li>MAVERIC Survey</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 70px; top: 21px;" data-name="text-83978d">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h2>Chandra and Radio follow-up</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 270.886px; height: 259.162px; left: 0px; top: 140px; min-width: 1px; min-height: 1px;" data-name="image-ae3612">
+                    <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="439" data-natural-height="420" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259352/xray.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 259.787px; height: 259.162px; left: 270.886px; top: 140px; min-width: 1px; min-height: 1px;" data-name="image-074eee">
+                    <div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="416" data-natural-height="415" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259343/55.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 358.831px; height: 300.838px; left: 60.5845px; top: 399.162px; min-width: 1px; min-height: 1px;" data-name="image-508db3">
+                    <div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="693" data-natural-height="581" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259391/hst.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 221px; left: 320.869px; top: 147px;" data-name="text-4a21d3">
+                    <div class="sl-block-content" style="z-index: 15; font-size: 50%;">
+                        <p><span style="font-size:24.8667px">Zhao et. al (2020)</span></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Preliminary Results</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 75px; top: 70px;" data-name="text-9880f2">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h3>NGC 6397</h3>
+                    </div>
+                </div>
+
+                <div class="sl-block" data-block-type="image" style="width: 480px; height: 455.581px; left: 0px; top: 174.419px; min-width: 1px; min-height: 1px;" data-name="image-9a058b">
+                    <div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="688" data-natural-height="653" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7257241/h.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 467.12px; left: 486.44px; top: 174.419px;" data-name="text-2f7a8f">
+                    <div class="sl-block-content" style="z-index: 14; line-height: 1.56; font-size: 140%;" data-has-line-height="">
+                        <ul>
+                            <li>WFPC-2</li>
+                            <li>March-April 2005:
+                                <ul>
+                                    <li>126 orbits</li>
+                                    <li>F814W, F606W and <em><span style="color:#FF0000">F336W</span></em></li>
+                                    <li>Exp time: 500-700 s</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 0px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Preliminary Results</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 75px; top: 70px;" data-name="text-9880f2">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h3>NGC 6397</h3>
+                    </div>
+                </div>
+
+                <div class="sl-block" data-block-type="image" style="width: 480px; height: 375.99px; left: 0px; top: 214.215px; min-width: 1px; min-height: 1px;" data-name="image-9a058b">
+                    <div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="803" data-natural-height="629" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7257239/hu2.png"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 467.12px; left: 486.44px; top: 174.419px;" data-name="text-2f7a8f">
+                    <div class="sl-block-content" style="z-index: 13; line-height: 1.56; font-size: 140%;" data-has-line-height="">
+                        <ul>
+                            <li>WFPC-2</li>
+                            <li>March-April 2005:
+                                <ul>
+                                    <li>126 orbits</li>
+                                    <li>F814W, F606W and <em><span style="color:#FF0000">F336W</span></em></li>
+                                    <li>Exp time: 500-700 s</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 810px; left: 80px; top: 10px;" data-name="text-b87c4c">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>CVs in NGC 6397</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-429cfe">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <p>Light curves of CVs</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 0px;" data-name="text-cac00e">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>A new candidate Redback MSP</h2>
+                    </div>
+                </div>
+
+
+
+                <div class="sl-block" data-block-type="image" style="width: 461.358px; height: 278.172px; left: 494.344px; top: 421.828px; min-width: 1px; min-height: 1px;" data-name="image-1ddfa3">
+                    <div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="680" data-natural-height="410" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7257349/folded.svg"></div>
+                </div>
+                <div class="sl-block sl-block-group" data-block-type="group" data-name="group-d66a81">
+                    <div class="sl-block-content sl-block-group-content" style="transform-origin: 240px 450.5px 0px; z-index: 12;">
+                        <div class="sl-block" data-block-type="image" style="width: 241.379px; height: 230.932px; left: 3.566px; top: 201px; min-width: 1px; min-height: 1px;" data-name="image-ae3612">
+                            <div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="439" data-natural-height="420" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259352/xray.png"></div>
+                        </div>
+                        <div class="sl-block" data-block-type="image" style="width: 231.489px; height: 230.932px; left: 244.945px; top: 201px; min-width: 1px; min-height: 1px;" data-name="image-074eee">
+                            <div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="416" data-natural-height="415" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259343/55.png"></div>
+                        </div>
+                        <div class="sl-block" data-block-type="image" style="width: 319.744px; height: 268.068px; left: 57.5511px; top: 431.932px; min-width: 1px; min-height: 1px;" data-name="image-508db3">
+                            <div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="693" data-natural-height="581" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7259391/hst.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 76.434px; top: 80px;" data-name="text-a8efe5">
+                    <div class="sl-block-content" style="z-index: 16;">
+                        <ul>
+                            <li>
+                                <h3>Porb of 1.96 day</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="width: 463.8px; height: 260px; left: 493.123px; top: 161.828px; min-width: 1px; min-height: 1px;" data-name="image-ab4616">
+                    <div class="sl-block-content" style="z-index: 17;" data-inline-svg="false"><img style="" data-natural-width="751" data-natural-height="421" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/410675/images/7257337/LandPDM.svg"></div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; width: 203px; left: 273.434px; top: 210px;" data-name="text-4a21d3">
+                    <div class="sl-block-content" style="z-index: 18; font-size: 50%;">
+                        <p><span style="font-size:24.8667px">Zhao et. al (2020)</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            <script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+width: 960,
+                            height: 700,
+                            transition: "none",
+                            controls: false,
+                            slideNumber: true,
+                            backgroundTransition: "none",
+                            center: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
